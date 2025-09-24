@@ -1,0 +1,7 @@
+INICIAR O VIRTUAL ENV (WINDOWS)
+Set-ExecutionPolicy RemoteSigned -Scope Process
+.\env\Scripts\activate
+
+INICIAR O VIRTUAL ENV (LINUX)
+
+source ./env/Scripts/activate
