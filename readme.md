@@ -74,4 +74,39 @@ Assim, o custo de ordenação cresce rapidamente conforme o número de polígono
 ### 📌 Considerações
 - O **Painter’s Algorithm** não é a técnica mais eficiente para cenas grandes e complexas.  
 - Técnicas modernas de renderização utilizam **Z-buffering**, que possui custo linear por fragmento e é implementado diretamente em hardware gráfico.  
-- O código atual serve bem para fins **educacionais e experimentais**, mas não é recomendado para renderização em tempo real de cenas com grande número de polígonos.  
+- O código atual serve bem para fins **educacionais e experimentais**, mas não é recomendado para renderização em tempo real de cenas com grande número de polígonos.
+
+---
+
+## 📷 Prints dos Resultados
+
+Abaixo estão alguns exemplos de execução do algoritmo em diferentes cenários:  
+
+### Cena 2D simples  
+![2D](https://github.com/Joao-lucas-felix/projetoICG/blob/master/prints/2D.png) 
+*Visualização inicial de uma cena simples em 2D com polígonos planos.*  
+
+---
+
+### Cena com 1k polígonos  
+![2D_1K](https://github.com/Joao-lucas-felix/projetoICG/blob/master/prints/2D_1K.png)  
+*Mesmo com 1.000 polígonos, a renderização se mantém fluida, permitindo testes interativos.*  
+
+---
+
+### Cena com 100k polígonos  
+![2D_100k](https://github.com/Joao-lucas-felix/projetoICG/blob/master/prints/2D_100k.png)  
+*Com 100.000 polígonos, o algoritmo sofre lentidão perceptível devido ao custo da ordenação (O(n log n)).*  
+
+---
+
+### Movimento de câmera em curva spline  
+![Curva_Spline](https://github.com/Joao-lucas-felix/projetoICG/blob/master/prints/Curva_Spline.gif)  
+*Demonstração de movimentação suave da câmera usando curvas paramétricas (spline).*  
+
+---
+
+### Teste com luzes  
+![Luzes](https://github.com/Joao-lucas-felix/projetoICG/blob/master/prints/luzes.gif)  
+*Cena experimental com efeitos de luz, evidenciando a sobreposição de objetos e a estética do algoritmo.*  
+
